@@ -2,18 +2,24 @@ import java.util.*;
 class Main{
     public static void main(String[]args){
         Scanner s=new Scanner(System.in);
-        System.out.println("Enter the list of numbers to be displayed ?:");
+        System.out.println("Enter String size:?");
         int n=s.nextInt();
-        for(int i=1;i<=n;i++){
-            if(i%3==0){
-                System.out.println("Fizz");
+        s.nextLine();
+     String lonodd="";
+        for(int i=0;i<n;i++){
+            String sentence=s.nextLine();
+            String[]words=sentence.split(" ");
+            for(String word:words){
+                if(word.length()%2!=0&&word.length()>lonodd.length()){
+                    lonodd=word;
+                }
             }
-            if(i%5==0){
-                System.out.println("Buzz");
-            }
-            if(i%3==0&&i%5==0){
-                System.out.println("FizzBuzz");
-            }
-            else{
-                System.out.println(i);
-            }}}}
+
+        }
+    if(!lonodd.isEmpty()){
+        System.out.println(lonodd);
+    }
+    else{
+        System.out.println("Better luck next Time....");
+    }
+}}
