@@ -1,6 +1,6 @@
 import java.util.*;
 class Main{
-    void array(int n,Scanner s,int arr[]){        // RATAN PROFIT
+    void array(int n,Scanner s,int arr[]){        // ADAM PROFIT
         for(int i=0;i<n;i++){
             arr[i]=s.nextInt();
         }
@@ -18,7 +18,7 @@ class Main{
             profit=t2-t1;
         }     
     }
-    System.out.println("The Ratan's stock profit :"+" "+profit);
+    System.out.println("The Adam's stock profit :"+" "+profit);
 }
     public static void main(String[]args){
         Scanner s=new Scanner(System.in);
