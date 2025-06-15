@@ -1,7 +1,6 @@
-//Ratan chooses the stock by selecting the day on which stock price is less and sell it in the day where stock price is high....
 import java.util.*;
 class Main{
-    void array(int n,Scanner s,int arr[]){
+    void array(int n,Scanner s,int arr[]){        // RATAN PROFIT
         for(int i=0;i<n;i++){
             arr[i]=s.nextInt();
         }
@@ -10,7 +9,7 @@ class Main{
     void minmax(int[]arr,Scanner s,int n){
         int profit=0;
         for(int i=0;i<n;i++){
-        int t1=arr[0];
+        int t1=arr[0];                            // BEST WAY TO COMPARE MINIMUM STOCK PRICE AND MAXIMUM STOCK PRICE
         int t2=arr[n-1];
         if(t1>t2){
             profit=t1-t2;
