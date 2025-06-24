@@ -68,7 +68,7 @@ void deletion_mid(int pos){
         l.insertion(30);
         l.insert_beg(5);
         l.insert_mid(15,2);
-       // l.deletion_beg();
+       l.deletion_beg(5);
        l.deletion_mid(4);
         l.display();
     
