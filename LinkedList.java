@@ -52,7 +52,19 @@ void deletion_mid(int pos){
         if(temp==null ||temp.next==null){
             return;}
         temp.next=temp.next.next;
-    }
+    }/*For reversing linked list...........
+    void reverse_LinkedList(){
+        Node current=head;
+        Node next;
+        Node prev=null;
+        while(current!=null){
+            next=current.next;
+            current.next=prev;
+            prev=current;
+            current=next;
+        }
+        head=prev;
+    }*/
     void display() {
         Node temp = head;
         while (temp != null) {
